@@ -113,7 +113,7 @@ DATABASES = {
 
     'default': {
         'ENGINE': 'django.db.backends.mysql',  # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'vddb',  # Or path to database file if using sqlite3.
+        'NAME': 'mydb',  # Or path to database file if using sqlite3.
         'USER': 'vitaut',  # Not used with sqlite3.
         'PASSWORD': 'V3682450v',  # Not used with sqlite3.
         'HOST': '78.46.175.237',  # Set to empty string for localhost. Not used with sqlite3.
