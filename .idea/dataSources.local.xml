@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="db" uuid="0103a86e-bc91-41fe-96d9-9bee75ae9385" />
-    <data-source name="db [2]" uuid="5688d302-96a0-47bc-bfb8-18bc341972a4" />
-    <data-source name="db [3]" uuid="6701bbb3-604b-4149-909d-378f64c2bc2d" />
+    <data-source name="MySQL - vddb@78.46.175.237" uuid="7a7f30ce-2a7b-422b-aa63-587775854008">
+      <secret-storage>master_key</secret-storage>
+      <user-name>vitaut</user-name>
+      <schema-pattern>vddb.*</schema-pattern>
+      <default-schemas>vddb.*</default-schemas>
+    </data-source>
   </component>
 </project>

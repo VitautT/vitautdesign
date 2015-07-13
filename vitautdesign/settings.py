@@ -29,7 +29,7 @@ ALLOWED_HOSTS = []
 
 
 # добавляем приложение в setting.py
-ACCOUNT_ACTIVATION_DAYS = 2 # кол-во дней для хранения кода активации
+ACCOUNT_ACTIVATION_DAYS = 2  # кол-во дней для хранения кода активации
 
 # для отправки кода активации
 AUTH_USER_EMAIL_UNIQUE = True
@@ -77,7 +77,7 @@ ROOT_URLCONF = 'vitautdesign.urls'
 SITE_ROOT = os.path.dirname(os.path.realpath(__file__))
 
 TEMPLATE_DIRS = (
-    os.path.join(SITE_ROOT,'templates'),
+    os.path.join(SITE_ROOT, 'templates'),
 
 )
 
@@ -104,16 +104,20 @@ WSGI_APPLICATION = 'vitautdesign.wsgi.application'
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
 
 STATICFILES_FINDERS = (
-'django.contrib.staticfiles.finders.FileSystemFinder',
-'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-#'django.contrib.staticfiles.finders.DefaultStorageFinder',
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    # 'django.contrib.staticfiles.finders.DefaultStorageFinder',
 )
 
-
 DATABASES = {
+
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',  # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+        'NAME': 'vddb',  # Or path to database file if using sqlite3.
+        'USER': 'vitaut',  # Not used with sqlite3.
+        'PASSWORD': 'V3682450v',  # Not used with sqlite3.
+        'HOST': '78.46.175.237',  # Set to empty string for localhost. Not used with sqlite3.
+        'PORT': '3306',  # Set to empty string for default. Not used with sqlite3.
     }
 }
 
