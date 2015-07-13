@@ -1,0 +1,24 @@
+﻿{% load static from staticfiles %}
+<html lang="ru">
+<head>{% block head %}
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="{% static "vitautdesign\style.css" %}"/>
+{% endblock %}</head>
+    <title>{% block title %}My Django Site{% endblock %}</title>
+
+
+<body>
+<header>{% block menu %}{% include "vitautdesign\header.html" %}{% endblock %}</header>
+
+{% block page %}
+    <content>{% block content %}
+    {% endblock %}</content>
+{% endblock %}
+
+<footer>{% block footer %}
+    {% block copyright %}
+        {% include "vitautdesign\footer.html" %}
+    {% endblock %}
+{% endblock %}</footer>
+</body>
+</html>

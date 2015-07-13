@@ -1,0 +1,8 @@
+li a {
+    color: green;
+  /* background-color: #dbff2a;*/
+}
+
+body {
+    background: white url("images/VDLogo.png") no-repeat right bottom;
+}
