@@ -1,11 +1,47 @@
 {% extends "vitautdesign/base.html" %}
 {% block title %}Index Page{% endblock %}
 {% block content %}
-    <div id="post">
-        <ul>
-        {% for post in posts %}
-            <li><a href="{% url 'news:one_new' post.id %}">{{ post.title }}</a></li>
-        {% endfor %}
-        </ul>
+
+       <div class="tvsbgr">
+        <div class="container">
+                    <h1>Vitautdesign.by </h1>
+                       <p> - проектирование и расчет систем отопления, вентиляции и
+                        кондиционирования зданий</p>
+                </div>
+                </div>
+
+
+        <div class="row popover-content">
+            <div class=" col-xs-12 col-sm-9 col-md-9 pull-left">
+<h3 class="text-center"> Проектирование, программирование, технические расчеты в строительстве </h3>
+<p class="text-center">Vitautdesign.by - сайт для тех, кто проектирует, монтирует
+    или строит свой собственный дом или квартиру. Здесь можно получить консультацию, заказать проект
+или скачать программы для автоматизации расчетов и проектирования</p>
+<hr class="half-rule">
+            </div>
+
+
+            <div class="col-xs-3 col-sm-3  pull-right   visible-sm visible-md">
+
+                <div class="tvs-panel tvs-panel-default">
+                    <div class="tvs-panel-heading">Новости</div>
+                    <div class="tvs-panel-body">
+                        <div id="post">
+                            {% for post in posts %} <!-- итерация по всем постам -->
+
+                                <li><a href="{% url 'news:one_new' post.id %}">{{ post.title }}</a></li>
+
+                                {#        {{ post.timestamp }} <!-- дата публикации -->#}
+                                {#        {{ post.author }} <!-- автор -->#}
+                                {#        {{ post.body|truncatewords:3|safe }} <!-- обрезаем посты, вывод по 80 слов -->#}
+                                {#        <!-- ссылаемся на полный текст поста -->#}
+                                {#        <a href="{% url 'news:one_new' post.id %}">Читать полностью&raquo;</a>#}
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
-{%endblock%}
+{% endblock %}
