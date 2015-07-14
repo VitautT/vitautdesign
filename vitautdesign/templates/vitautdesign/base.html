@@ -3,16 +3,16 @@
 <head>{% block head %}
         <meta charset="UTF-8">
 {#        <script src="http://code.jquery.com/jquery-latest.js"></script>#}
-        <link rel="stylesheet" type="text/css" href="{% static "vitautdesign\style.css" %}"/>
-        <link rel="stylesheet" type="text/css" href="{% static "vitautdesign\style.css" %}"/>
-    <link rel="stylesheet" type="text/css" href="{% static "vitautdesign\docs.min.css" %}"/>
-        <link rel="stylesheet" type="text/css" href="{% static "vitautdesign\mystyle.css" %}"/>
+        <link rel="stylesheet" type="text/css" href="{% static "vitautdesign/style.css" %}"/>
+        <link rel="stylesheet" type="text/css" href="{% static "vitautdesign/style.css" %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static "vitautdesign/docs.min.css" %}"/>
+        <link rel="stylesheet" type="text/css" href="{% static "vitautdesign/mystyle.css" %}"/>
 {% endblock %}</head>
     <title>{% block title %}My Django Site{% endblock %}</title>
 
 
 <body class="bs-docs-home">
-{% block menu %}{% include "vitautdesign\header.html" %}{% endblock %}
+{% block menu %}{% include "vitautdesign/header.html" %}{% endblock %}
 
 {% block page %}
  {% block content %}
@@ -21,7 +21,7 @@
 
 <footer>{% block footer %}
     {% block copyright %}
-        {% include "vitautdesign\footer.html" %}
+        {% include "vitautdesign/footer.html" %}
     {% endblock %}
 {% endblock %}</footer>
 
