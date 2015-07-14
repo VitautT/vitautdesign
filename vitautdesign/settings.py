@@ -1,3 +1,5 @@
+#-*- coding: utf-8 -*-
+
 """
 Django settings for vitautdesign project.
 
@@ -28,10 +30,10 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
-# добавляем приложение в setting.py
-ACCOUNT_ACTIVATION_DAYS = 2  # кол-во дней для хранения кода активации
+# РґРѕР±Р°РІР»СЏРµРј РїСЂРёР»РѕР¶РµРЅРёРµ РІ setting.py
+ACCOUNT_ACTIVATION_DAYS = 2  # РєРѕР»-РІРѕ РґРЅРµР№ РґР»СЏ С…СЂР°РЅРµРЅРёСЏ РєРѕРґР° Р°РєС‚РёРІР°С†РёРё
 
-# для отправки кода активации
+# РґР»СЏ РѕС‚РїСЂР°РІРєРё РєРѕРґР° Р°РєС‚РёРІР°С†РёРё
 AUTH_USER_EMAIL_UNIQUE = True
 EMAIL_HOST = 'localhost'
 EMAIL_PORT = 1025
