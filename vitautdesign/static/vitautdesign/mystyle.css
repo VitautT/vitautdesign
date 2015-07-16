@@ -140,3 +140,142 @@
 .list-group + .tvs-panel-footer {
     border-top-width: 0;
 }
+
+
+.TVS-docs-featurette {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+    background-color: #fefefe;
+    border-bottom: 1px solid #e5e5e5
+}
+
+
+.tvs-btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 0px;
+}
+.tvs-btn:focus,
+.tvs-btn:active:focus,
+.tvs-btn.active:focus,
+.tvs-btn.focus,
+.tvs-btn:active.focus,
+.tvs-btn.active.focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.tvs-btn:hover,
+.tvs-btn:focus,
+.tvs-btn.focus {
+  color: #333;
+  text-decoration: none;
+}
+.tvs-btn:active,
+.tvs-btn.active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+          box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+
+.tvs-btn-primary {
+  color: #fefefe;
+  background-color: #ff790a;
+  /*border-color: #ff3809;*/
+}
+.tvs-btn-primary:focus,
+.tvs-btn-primary.focus {
+  color: #fefefe;
+  background-color: #ff790a;
+  /*border-color: #ff790a;*/
+}
+.tvs-btn-primary:hover {
+  color: #ff790a;
+  background-color: #fefefe;;
+  border-color: #ff790a;
+}
+.tvs-btn-primary:active,
+.tvs-btn-primary.active,
+.open > .dropdown-toggle.tvs-btn-primary {
+  color: #fff;
+  background-color: #dcdcdc;
+  /*border-color: #204d74;*/
+}
+.tvs-btn-primary:active:hover,
+.tvs-btn-primary.active:hover,
+.open > .dropdown-toggle.tvs-btn-primary:hover,
+.tvs-btn-primary:active:focus,
+.tvs-btn-primary.active:focus,
+.open > .dropdown-toggle.tvs-btn-primary:focus,
+.tvs-btn-primary:active.focus,
+.tvs-btn-primary.active.focus,
+.open > .dropdown-toggle.tvs-btn-primary.focus {
+  color: #ff790a;
+  background-color: #dcdcdc;
+  /*border-color: #122b40;*/
+}
+.tvs-btn-primary:active,
+.tvs-btn-primary.active,
+.open > .dropdown-toggle.tvs-btn-primary {
+  background-image: none;
+}
+.tvs-btn-primary.disabled,
+.tvs-btn-primary[disabled],
+fieldset[disabled] .tvs-btn-primary,
+.tvs-btn-primary.disabled:hover,
+.tvs-btn-primary[disabled]:hover,
+fieldset[disabled] .tvs-btn-primary:hover,
+.tvs-btn-primary.disabled:focus,
+.tvs-btn-primary[disabled]:focus,
+fieldset[disabled] .tvs-btn-primary:focus,
+.tvs-btn-primary.disabled.focus,
+.tvs-btn-primary[disabled].focus,
+fieldset[disabled] .tvs-btn-primary.focus,
+.tvs-btn-primary.disabled:active,
+.tvs-btn-primary[disabled]:active,
+fieldset[disabled] .tvs-btn-primary:active,
+.tvs-btn-primary.disabled.active,
+.tvs-btn-primary[disabled].active,
+fieldset[disabled] .tvs-btn-primary.active {
+  background-color: #ff790a;
+  border-color: #a44c17;
+}
+.tvs-btn-primary .badge {
+  color: #ff790a;
+  background-color: #fff;
+}
+
+
+
+
+
+
+tvs20 {
+
+    font-size: 20px;
+}
+
+tvs30 {
+
+    font-size: 30px;
+}
