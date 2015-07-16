@@ -1,18 +1,22 @@
 {% extends "vitautdesign/base.html" %}
 {% block title %}Index Page{% endblock %}
-{% block content %}
 
-       <div class="tvsbgr">
-        <div class="container">
+{% block titlepage %}
+   <div class="tvsbgr">
+     <div class="container">
                     <h1>Vitautdesign.by </h1>
                        <p> - проектирование и расчет систем отопления, вентиляции и
                         кондиционирования зданий</p>
                 </div>
-                </div>
+      </div>
 
+{% endblock %}
 
-        <div class="row popover-content">
-            <div class=" col-xs-12 col-sm-9 col-md-9 pull-left">
+{#      <div class="row ">#}
+{% block content %}
+
+  <div class="container">
+            <div class=" col-xs-12 col-sm-9 ">
 <h3 class="text-center"> Проектирование, программирование, технические расчеты в строительстве </h3>
 <p class="text-center">Vitautdesign.by - сайт для тех, кто проектирует, монтирует
     или строит свой собственный дом или квартиру. Здесь можно получить консультацию, заказать проект
@@ -21,7 +25,9 @@
             </div>
 
 
-            <div class="col-xs-3 col-sm-3  pull-right   visible-sm visible-md">
+
+        {% block leftmenu %}
+   <div class="col-sm-3   visible-sm visible-md visible-lg">
 
                 <div class="tvs-panel tvs-panel-default">
                     <div class="tvs-panel-heading">Новости</div>
@@ -42,6 +48,11 @@
                 </div>
 
             </div>
-        </div>
-    </div>
+
 {% endblock %}
+
+ </div>
+{% endblock %}
+
+
+
