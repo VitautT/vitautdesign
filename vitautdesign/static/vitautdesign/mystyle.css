@@ -231,7 +231,7 @@
 .tvs-btn-primary.active.focus,
 .open > .dropdown-toggle.tvs-btn-primary.focus {
   color: #ff790a;
-  background-color: #dcdcdc;
+  background-color: #ffeac8;
   /*border-color: #122b40;*/
 }
 .tvs-btn-primary:active,
